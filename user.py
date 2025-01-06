@@ -7,7 +7,9 @@ class user:
 def authenticated_decorator(function):
   def wrapper_function(*args, **kwargs):
     if args[0].is_online == True:
-      return f'{function(args[0].user)} is authenticated'
+      return f'{function(args[0])} is authenticated'
+  return wrapper_function
+
 
 @authenticated_decorator
 def is_authenticated(function):
