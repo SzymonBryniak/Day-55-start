@@ -1,7 +1,8 @@
+
 def logging_decorator(function):
     def wrapper_function(*args, **kwargs):
-        print(f'You called {function.__name__}')
-        print(f'It returned: {function(args[0], args[1], args[2])}')
+        print(f'You called {function.__name__}{args}')
+        print(f'It returned: {function(args)}')
     return wrapper_function
 
 
