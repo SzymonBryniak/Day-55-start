@@ -1,9 +1,8 @@
+
 from flask import Flask
-import requests
+
 app = Flask(__name__)
 
-
-requests.get("https://www.google.com")
 
 
 def make_bold(function):
@@ -26,8 +25,7 @@ def make_underlined(function):
 def hello_world():
   return '<h1 style="text-align: center">Hello World!</h1>\
           <p>This is a paragraph.</p>\
-          <img src="https://api.deepai.org/job-view-file/5d3fa914-ce43-45cc-afe1-8bcc640a68fa/outputs/output.jpg" width=200>\
-          <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmxkZWlxem51bmFuMDdib2c0NTF4dnloNmQwcmRsYW4xcWZsZXgxZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KYgNd2BvEuRfZjIZRs/giphy.webp">'
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGswbGxpZnJlbTV5M2d5YW1tbG8wb3cyc2R2eHRuNDdhcHFqNnp1ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/m1EQb15sqXIOeKFtju/giphy.gif">'
 
 
 @app.route("/bye")
